@@ -31,7 +31,7 @@ class AddNewCategoryViewController : UIViewController {
     
     @IBAction func tappedAddBtn(_ sender: Any) {
         guard let categoryName = categoryNameTextField.text, !categoryName.isEmpty else {
-            let alert = UIAlertController.singleBtnAler(title: "", message: "カテゴリ名を入力して下さい", completion: nil)
+            let alert = UIAlertController.singleBtnAlert(title: "", message: "カテゴリ名を入力して下さい", completion: nil)
             self.present(alert, animated: true, completion: nil)
             return
         }
